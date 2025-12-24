@@ -7,7 +7,7 @@ $query = "create table if not exists tasks (
     id integer PRIMARY KEY AUTOINCREMENT,
     title varchar (255) NOT NULL,
     description TEXT,
-    status varchat check(status in ('pending', 'completed') default 'pending')
+    status TEXT check(status in ('pending', 'completed') default 'pending')
 )";
 
 $pdo->exec($query);
