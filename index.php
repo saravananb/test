@@ -1,7 +1,7 @@
 <?php
 
 $pdo = new PDO("sqlite:database.taskmanagement");
-$pdo->setAttributes(PDO:ATTR_ERRMODE, PDO:ErrMODE_EXCEPTION);
+$pdo->setAttributes(PDO:ATTR_ERRMODE, PDO:ERRMODE_EXCEPTION);
 
 $query = "create table if not exists tasks (
     id integer PRIMARY KEY AUTOINCREMENT,
